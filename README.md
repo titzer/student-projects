@@ -3,6 +3,11 @@
 In this repo, you will find an up-to-date list of projects of various sizes and difficulties for students interested in working with me on class, research, or honors projects.
 Some projects have a larger component of research (i.e. high novelty, many unknowns) than others.
 
+* Research Projects *
+
+These projects have significant number of unknowns and design choices to make.
+They represent more research-oriented topics with potential publication opportunities.
+
 ** [Packing ADTs](PackingADTs.md) ** - Virgil, moderate difficulty, high novelty
 
 In this project, you will explore new techniques to represent algebraic data types (ADTs) more efficiently.
@@ -10,7 +15,7 @@ You will work on the internals of a sophisticated, static compiler for the Virgi
 IMPACT: You will make Virgil completely outclass all languages to date and very likely publish a paper.
 Compiler experience and some familiarity with functional programming required.
 
-** [Data Layouts](DataLayouts.md) ** - Virgil, moderate difficulty, high novelty
+** [Design a Data Layout Embedded DSL for Virgil](DataLayouts.md) ** - Virgil, moderate difficulty, high novelty
 
 In this project, you will design and implement new language constructs for describing memory layouts of fixed data structures such as network packets, kernel buffers, etc.
 You will work on the internals of a sophisticated, static compiler for the Virgil programming language and introduce new analysis and optimizations in this compiler.
@@ -48,12 +53,42 @@ splitting heuristics and incremental rebuilding of the interference graph.
 IMPACT: You will make Virgil run much faster and maybe publish a paper.
 Compiler experience required.
 
+
+* Feature Projects *
+
+Both Virgil (the programming language) and Wizard (the WebAssembly engine) can benefit from new features.
+Adding new features to the Virgil programming language not only makes writing code more fun and expressive, but can enable new types of expression patterns and accompanying compiler optimizations that make VM development a whole lot nicer.
+In particular, the Wizard engine should stay up-to-date with coming proposals, but also support platform features (like WASI) that make it possible to experiment with large, real programs.
+
+** [Implement `wasi_snapshot_preview1` in Wizard on `x86-64-linux`](WasiWizard.md) ** - Virgil, low difficulty, low novelty, high priority
+
+In this project, you will implement the WebAssembly System Interface (WASI) in the Wizard Engine.
+You'll write code to interface directly with the Linux kernel to provide the lowest-overhead, no-dependency implementation of this interface.
+IMPACT: You will greatly improve the number of applications Wizard can run, allowing testing, benchmarking, and studying full applications in direct comparison to production engines.
+WebAssembly experience required, low-level system call familiarity required.
+
+
+* Porting Projects *
+
+Porting Virgil (the programming language) and Wizard (the research WebAssembly engine) to new plaforms opens up new possibilities.
+For one, it makes development on new platforms more ergonomic and efficient, and secondly it overall increases the capabilities of both systems.
+For Wizard to run on a platform natively, Virgil must first be ported.
+
 ** [Port Wizard's Fast Interpreter to JSC](PortWizardJSC.md) ** - C++, WebAssembly, high difficulty, moderate novelty
 
 In this project, you will port (or rewrite) Wizard's fast in-place interpreter, hand-written in assembly, to JavaScriptCore.
 You will add a new (or adapt the existing) interpreter tier which does not rewrite Wasm, but uses the original bytes.
 IMPACT: You will demonstrate that WebAssembly can be interpreted in-place fast in a production engine and maybe publish a paper.
 Assembly and C++ experience required.
+
+** [Port Virgil to x86-64-darwin](PortVirgilX8664Darwin.md) ** - Virgil, low difficulty, low novelty, high priority
+
+In this project, you will port Virgil to the `x86-64-darwin` platform, i.e. 64-bit x86 Macs.
+Since Apple discontinued support for 32-bit applications on Mac OS X 10.15 (Catalina), Virgil runs only on the JVM on later versions.
+You will work on the runtime and system layer of Virgil and make small modifications to the compiler to allow system calls and emit 64-bit MachO binaries.
+You can base much of your work on the X86-32 runtime.
+IMPACT: You will make it possible to develop Virgil and Wizard natively on MacOS X 10.15 and later.
+Compiler and assembly experience required.
 
 ** [Port Virgil to ARM64](PortVirgilARM64.md) ** - Virgil, fair difficulty, low novelty
 
