@@ -67,7 +67,7 @@ You'll write code to interface directly with the Linux kernel to provide the low
 IMPACT: You will greatly improve the number of applications Wizard can run, allowing testing, benchmarking, and studying full applications in direct comparison to production engines.
 WebAssembly experience required, low-level system call familiarity required.
 
-### [Integrate Virgil and Rust](WasiWizard.md) - Virgil/Rust, medium difficulty, high novelty, high priority
+### [Integrate Virgil and Rust](WasiWizard.md) - Virgil/Rust, medium difficulty, high novelty, low priority
 
 In this project, you will explore ways to make Virgil code interact with Rust.
 A project with many unknowns, you will investigate different linking strategies (e.g. does the Virgil compiler generate an object file linked into a Rust executable or vice versa? what about dynamic linking?).
