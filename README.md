@@ -54,6 +54,17 @@ IMPACT: You will make Virgil run much faster and maybe publish a paper.
 Compiler experience required.
 
 
+## Development Projects
+
+Writing code in Virgil is a lot of fun, but tooling support can always be better.
+Several projects could help make Virgil a lot more productive.
+
+### Integrate with [Visual Studio Code](https://code.visualstudio.com/api/language-extensions/overview)
+
+A popular, fast, and extensible editor, Visual Studio Code supports a range of integration levels for new languages.
+In this project, you'll extend Visual Studio Code with syntax highlight, bracket matching, and eventually, completion.
+Implement a language server that will allow checking syntax errors directly in the editor and improve the development experience for all Virgil programmers!
+
 ## Feature Projects
 
 Both Virgil (the programming language) and Wizard (the WebAssembly engine) can benefit from new features.
