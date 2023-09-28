@@ -62,13 +62,6 @@ Porting Virgil (the programming language) and Wizard (the research WebAssembly e
 For one, it makes development on new platforms more ergonomic and efficient, and secondly it overall increases the capabilities of both systems.
 For Wizard to run on a platform natively, Virgil must first be ported.
 
-### [Port Wizard's Fast Interpreter to JSC](PortWizardJSC.md) - C++, WebAssembly, high difficulty, moderate novelty
-
-In this project, you will port (or rewrite) Wizard's fast in-place interpreter, hand-written in assembly, to JavaScriptCore.
-You will add a new (or adapt the existing) interpreter tier which does not rewrite Wasm, but uses the original bytes.
-IMPACT: You will demonstrate that WebAssembly can be interpreted in-place fast in a production engine and maybe publish a paper.
-Assembly and C++ experience required.
-
 ### [Port Virgil to ARM64](PortVirgilARM64.md) - Virgil, fair difficulty, low novelty
 
 In this project, you will port Virgil to the ARM64 architecture by writing a new assembler and compiler backend.
@@ -109,6 +102,10 @@ IMPACT: You will make it easy to reliably benchmark any aspect of any Wasm engin
 Basic programming and scripting experience required, some familiarity with statistics.
 
 ## Completed (or mostly completed) projects
+
+### [Port Wizard's Fast Interpreter to JSC](PortWizardJSC.md) - C++, WebAssembly, high difficulty, moderate novelty
+
+This was already done by an intern on the JSC team!
 
 ### [Port Virgil to x86-64-darwin](PortVirgilX8664Darwin.md) - Virgil, low difficulty, low novelty, high priority
 
