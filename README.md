@@ -114,5 +114,6 @@ This project consists of two parts: [layouts](https://github.com/titzer/virgil/b
 
 ### [Graph Coloring Register Allocator](RegAlloc.md) - Virgil
 
-This project is completed.
+This project is mostly completed, however coalescing is currently turned off, and a better splitting mechanism could be implemented.
+Maintenance / refactoring now.
 
