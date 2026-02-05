@@ -94,41 +94,25 @@ You'll write code to interface directly with the Linux kernel to provide the low
 IMPACT: You will greatly improve the number of applications Wizard can run, allowing testing, benchmarking, and studying full applications in direct comparison to production engines.
 WebAssembly experience required, low-level system call familiarity required.
 
-### [Benchmark WebAssembly](BenchmarkWasm.md) - WebAssembly, fair difficulty, fair novelty
-
-In this project, you will scour the planet for benchmarks for WebAssembly, creating a suite of freely-available kernels, micro-benchmarks, programs, and applications that is useful for studying all aspects of Wasm performance.
-You will follow best practices from benchmarking literature and known suites such as SPEC and DaCapo and create a framework for easily obtaining statistically reliable, reproducible results.
-IMPACT: You will make it easy to reliably benchmark any aspect of any Wasm engine and maybe publish the go-to paper on doing so.
-Basic programming and scripting experience required, some familiarity with statistics.
-
 ## Completed (or mostly completed) projects
 
 ### [Port Wizard's Fast Interpreter to JSC](PortWizardJSC.md) - C++, WebAssembly, high difficulty, moderate novelty
 
-This was already done by an intern on the JSC team!
+This was already done by the JSC team and is now part of Safari.
+
+### [Benchmark WebAssembly](BenchmarkWasm.md) - WebAssembly, fair difficulty, fair novelty
+
+This project is mostly completed with [Wasure](https://github.com/r-carissimi/wasure).
 
 ### [Port Virgil to x86-64-darwin](PortVirgilX8664Darwin.md) - Virgil, low difficulty, low novelty, high priority
 
-In this project, you will port Virgil to the `x86-64-darwin` platform, i.e. 64-bit x86 Macs.
-Since Apple discontinued support for 32-bit applications on Mac OS X 10.15 (Catalina), Virgil runs only on the JVM on later versions.
-You will work on the runtime and system layer of Virgil and make small modifications to the compiler to allow system calls and emit 64-bit MachO binaries.
-You can base much of your work on the X86-32 runtime.
-IMPACT: You will make it possible to develop Virgil and Wizard natively on MacOS X 10.15 and later.
-Compiler and assembly experience required.
+This project is complete.
 
 ### [Design a Data Layout Embedded DSL for Virgil](DataLayouts.md) - Virgil, moderate difficulty, high novelty
 
-In this project, you will design and implement new language constructs for describing memory layouts of fixed data structures such as network packets, kernel buffers, etc.
-You will work on the internals of a sophisticated, static compiler for the Virgil programming language and introduce new analysis and optimizations in this compiler.
-IMPACT: You will make Virgil the language of choice for low-level programming where memory layouts are fixed and likely publish a paper.
-Compiler experience required.
+This project consists of two parts: [layouts](https://github.com/titzer/virgil/blob/master/doc/tutorial/Layouts.md) and [packing](https://dl.acm.org/doi/10.1145/3694848.3694857) and is mostly completed.
 
-### [Graph Coloring Register Allocator](RegAlloc.md) - Virgil, high difficulty, moderate novelty
+### [Graph Coloring Register Allocator](RegAlloc.md) - Virgil
 
-In this project, you will write a new, sophisticated register allocator for the advanced Virgil compiler.
-Despite being studied for five decades, register allocation remains a challenging problem.
-You will explore new techniques to make graph coloring register allocation more efficient, in particular better
-splitting heuristics and incremental rebuilding of the interference graph.
-IMPACT: You will make Virgil run much faster and maybe publish a paper.
-Compiler experience required.
+This project is completed.
 
